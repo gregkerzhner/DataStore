@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="T6o-mf-s3S">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LearnRedux" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="FTu-4J-u8s">
+                                <rect key="frame" x="10" y="120" width="355" height="383.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inhale Start Length" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8FJ-ho-80Z">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="X3S-Ro-NMb">
+                                        <rect key="frame" x="-2" y="20.5" width="359" height="31"/>
+                                        <connections>
+                                            <action selector="inhaleStartChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="DrN-Rw-Ssw"/>
+                                        </connections>
+                                    </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inhale End Length" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rbK-Eb-Tgu">
+                                        <rect key="frame" x="0.0" y="50.5" width="355" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Mfg-cr-3Yt">
+                                        <rect key="frame" x="-2" y="71" width="359" height="31"/>
+                                        <connections>
+                                            <action selector="inhaleEndChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="yYY-sd-1lo"/>
+                                        </connections>
+                                    </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pause Start Length" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hDz-eA-VV8">
+                                        <rect key="frame" x="0.0" y="101" width="355" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="2Ok-yJ-oDp">
+                                        <rect key="frame" x="-2" y="121.5" width="359" height="31"/>
+                                        <connections>
+                                            <action selector="pauseStartChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="YCr-LC-8rn"/>
+                                        </connections>
+                                    </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pause End Length" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ui2-5B-duB">
+                                        <rect key="frame" x="0.0" y="151.5" width="355" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="wxG-zD-3A1">
+                                        <rect key="frame" x="-2" y="172" width="359" height="31"/>
+                                        <connections>
+                                            <action selector="pauseEndChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="G3S-cu-tPx"/>
+                                        </connections>
+                                    </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exhale Start Length" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uZI-Kf-7wp">
+                                        <rect key="frame" x="0.0" y="202" width="355" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="cWm-bl-6VS">
+                                        <rect key="frame" x="-2" y="222.5" width="359" height="31"/>
+                                        <connections>
+                                            <action selector="exhaleStartChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="kos-Tk-VVt"/>
+                                        </connections>
+                                    </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exhale End Length" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0g-VF-RgN">
+                                        <rect key="frame" x="0.0" y="252.5" width="355" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="YAa-yz-nRg">
+                                        <rect key="frame" x="-2" y="273" width="359" height="31"/>
+                                        <connections>
+                                            <action selector="exhaleEndChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="7ep-Vd-8M0"/>
+                                        </connections>
+                                    </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duration (minutes)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VN4-80-zcO">
+                                        <rect key="frame" x="0.0" y="303" width="355" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Vgz-SJ-WAW">
+                                        <rect key="frame" x="-2" y="323.5" width="359" height="31"/>
+                                        <connections>
+                                            <action selector="durationChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="Z0X-6M-FE5"/>
+                                        </connections>
+                                    </slider>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qc2-77-XbX">
+                                        <rect key="frame" x="0.0" y="353.5" width="355" height="30"/>
+                                        <state key="normal" title="Start"/>
+                                        <connections>
+                                            <action selector="startAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j4z-e9-hz0"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FTu-4J-u8s" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="120" id="Qhg-Ld-SAK"/>
+                            <constraint firstAttribute="trailing" secondItem="FTu-4J-u8s" secondAttribute="trailing" constant="10" id="j4o-IF-fkD"/>
+                            <constraint firstItem="FTu-4J-u8s" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="xCw-Dt-YzT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="MsV-1X-Iit"/>
+                    <connections>
+                        <outlet property="durationLabelLabel" destination="VN4-80-zcO" id="JvQ-vI-abN"/>
+                        <outlet property="durationSlider" destination="Vgz-SJ-WAW" id="Wte-2x-FKU"/>
+                        <outlet property="exhaleEndLabel" destination="d0g-VF-RgN" id="IZG-V1-8Af"/>
+                        <outlet property="exhaleEndSlider" destination="YAa-yz-nRg" id="TzR-kl-WHM"/>
+                        <outlet property="exhaleStartLabel" destination="uZI-Kf-7wp" id="Fdv-Pn-ovS"/>
+                        <outlet property="exhaleStartSlider" destination="cWm-bl-6VS" id="mWE-We-LYi"/>
+                        <outlet property="inhaleEndLabel" destination="rbK-Eb-Tgu" id="VYh-av-viu"/>
+                        <outlet property="inhaleEndSlider" destination="Mfg-cr-3Yt" id="txJ-j8-p9e"/>
+                        <outlet property="inhaleStartLabel" destination="8FJ-ho-80Z" id="7JE-nA-CEG"/>
+                        <outlet property="inhaleStartSlider" destination="X3S-Ro-NMb" id="5Ld-Sl-wF3"/>
+                        <outlet property="pauseEndLabel" destination="Ui2-5B-duB" id="hVx-1y-rX7"/>
+                        <outlet property="pauseEndSlider" destination="wxG-zD-3A1" id="cSh-8b-XBB"/>
+                        <outlet property="pauseStartLabel" destination="hDz-eA-VV8" id="3tD-vb-bYt"/>
+                        <outlet property="pauseStartSlider" destination="2Ok-yJ-oDp" id="bUK-zW-29c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="132.68365817091455"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="s4o-gc-qfC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="T6o-mf-s3S" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="obl-3i-wYI">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Gae-nE-ajY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sD1-qA-OfS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+</document>
