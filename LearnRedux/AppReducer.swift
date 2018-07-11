@@ -28,13 +28,15 @@ func breathReducer(action: Action, state: BreathState?, settingsState: SettingsS
     return BreathState(inhaleLength: settingsState.inhaleStartSeconds,
                        pauseLength: settingsState.pauseStartSeconds,
                        exhaleLength: settingsState.exhaleStartSeconds,
-                       elapsedTime: 0)
+                       breaths: 0,
+                       settingsState: SettingsState.reset)
     default:
       let current = state ?? BreathState.empty
       return BreathState(inhaleLength: current.inhaleLength + settingsState.inhaleIncrement,
                          pauseLength: current.pauseLength + settingsState.pauseIncrement,
                          exhaleLength: current.exhaleLength + settingsState.exhaleIncrement,
-                         elapsedTime: 0)
+                         breaths: 0,
+                         settingsState: SettingsState.reset)
   }
 
 }

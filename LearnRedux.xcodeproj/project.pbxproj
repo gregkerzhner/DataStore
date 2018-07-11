@@ -7,31 +7,57 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D28D98320F6B7B9003A849F /* fatcat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2D28D98220F6B7B9003A849F /* fatcat.jpg */; };
+		2D28D99720F942AF003A849F /* LearnReduxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D28D99620F942AF003A849F /* LearnReduxTests.swift */; };
+		2D28D99F20F942C1003A849F /* StoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D28D99E20F942C1003A849F /* StoreTests.swift */; };
+		2D28D9A020F9590F003A849F /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D70390520EE7CDC003CE079 /* ReSwift.framework */; };
 		2D7038F220EE7B2D003CE079 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7038F120EE7B2D003CE079 /* AppDelegate.swift */; };
 		2D7038F420EE7B2D003CE079 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7038F320EE7B2D003CE079 /* ViewController.swift */; };
 		2D7038F720EE7B2D003CE079 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D7038F520EE7B2D003CE079 /* Main.storyboard */; };
 		2D7038F920EE7B2E003CE079 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D7038F820EE7B2E003CE079 /* Assets.xcassets */; };
 		2D7038FC20EE7B2E003CE079 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D7038FA20EE7B2E003CE079 /* LaunchScreen.storyboard */; };
-		2D70390720EE7CDC003CE079 /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D70390520EE7CDC003CE079 /* ReSwift.framework */; };
-		2D70390B20EFC3BC003CE079 /* Statez.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D70390A20EFC3BC003CE079 /* Statez.swift */; };
+		2D70390B20EFC3BC003CE079 /* States.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D70390A20EFC3BC003CE079 /* States.swift */; };
 		2D70390D20EFC4FD003CE079 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D70390C20EFC4FD003CE079 /* AppReducer.swift */; };
 		2D70391320EFE485003CE079 /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D70391220EFE485003CE079 /* Actions.swift */; };
 		2D70391520F01875003CE079 /* BreatheViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D70391420F01875003CE079 /* BreatheViewController.swift */; };
 		2D70391720F019B6003CE079 /* BreathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D70391620F019B6003CE079 /* BreathView.swift */; };
 		2D9A18EE20F3D104003826F4 /* BreathStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9A18ED20F3D104003826F4 /* BreathStore.swift */; };
-		2D9A191020F3D87E003826F4 /* GenericState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9A190520F3D87E003826F4 /* GenericState.swift */; };
-		2D9A191120F3D87E003826F4 /* StatefulView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9A190620F3D87E003826F4 /* StatefulView.swift */; };
 		2D9A191220F3D87E003826F4 /* CustomLogDescriptionConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9A190720F3D87E003826F4 /* CustomLogDescriptionConvertible.swift */; };
 		2D9A191320F3D87E003826F4 /* StateSubscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9A190820F3D87E003826F4 /* StateSubscription.swift */; };
-		2D9A191620F3D87E003826F4 /* CustomOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9A190B20F3D87E003826F4 /* CustomOperators.swift */; };
 		2D9A191720F3D87E003826F4 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9A190C20F3D87E003826F4 /* ViewModel.swift */; };
 		2D9A191820F3D87E003826F4 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9A190D20F3D87E003826F4 /* Store.swift */; };
-		2D9A191920F3D87E003826F4 /* GenericViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9A190E20F3D87E003826F4 /* GenericViewState.swift */; };
 		2D9A191D20F413BE003826F4 /* BreathViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9A191C20F413BE003826F4 /* BreathViewModel.swift */; };
 		2D9A191F20F417EF003826F4 /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9A191E20F417EF003826F4 /* SettingsStore.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		2D28D99920F942AF003A849F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D7038E620EE7B2D003CE079 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D7038ED20EE7B2D003CE079;
+			remoteInfo = LearnRedux;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2D28D9A120F9591C003A849F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		2D28D98220F6B7B9003A849F /* fatcat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fatcat.jpg; sourceTree = "<group>"; };
+		2D28D99420F942AF003A849F /* LearnReduxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearnReduxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D28D99620F942AF003A849F /* LearnReduxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnReduxTests.swift; sourceTree = "<group>"; };
+		2D28D99820F942AF003A849F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D28D99E20F942C1003A849F /* StoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreTests.swift; sourceTree = "<group>"; };
 		2D7038EE20EE7B2D003CE079 /* LearnRedux.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnRedux.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D7038F120EE7B2D003CE079 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D7038F320EE7B2D003CE079 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -41,40 +67,62 @@
 		2D7038FD20EE7B2E003CE079 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D70390420EE7CDC003CE079 /* ReSwift.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = ReSwift.framework.dSYM; path = Carthage/Build/iOS/ReSwift.framework.dSYM; sourceTree = "<group>"; };
 		2D70390520EE7CDC003CE079 /* ReSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReSwift.framework; path = Carthage/Build/iOS/ReSwift.framework; sourceTree = "<group>"; };
-		2D70390A20EFC3BC003CE079 /* Statez.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statez.swift; sourceTree = "<group>"; };
+		2D70390A20EFC3BC003CE079 /* States.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = States.swift; sourceTree = "<group>"; };
 		2D70390C20EFC4FD003CE079 /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
 		2D70391220EFE485003CE079 /* Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
 		2D70391420F01875003CE079 /* BreatheViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreatheViewController.swift; sourceTree = "<group>"; };
 		2D70391620F019B6003CE079 /* BreathView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathView.swift; sourceTree = "<group>"; };
 		2D9A18ED20F3D104003826F4 /* BreathStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathStore.swift; sourceTree = "<group>"; };
-		2D9A190520F3D87E003826F4 /* GenericState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericState.swift; sourceTree = "<group>"; };
-		2D9A190620F3D87E003826F4 /* StatefulView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatefulView.swift; sourceTree = "<group>"; };
 		2D9A190720F3D87E003826F4 /* CustomLogDescriptionConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLogDescriptionConvertible.swift; sourceTree = "<group>"; };
 		2D9A190820F3D87E003826F4 /* StateSubscription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateSubscription.swift; sourceTree = "<group>"; };
-		2D9A190B20F3D87E003826F4 /* CustomOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomOperators.swift; sourceTree = "<group>"; };
 		2D9A190C20F3D87E003826F4 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		2D9A190D20F3D87E003826F4 /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
-		2D9A190E20F3D87E003826F4 /* GenericViewState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericViewState.swift; sourceTree = "<group>"; };
 		2D9A191C20F413BE003826F4 /* BreathViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathViewModel.swift; sourceTree = "<group>"; };
 		2D9A191E20F417EF003826F4 /* SettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2D28D99120F942AF003A849F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2D7038EB20EE7B2D003CE079 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D70390720EE7CDC003CE079 /* ReSwift.framework in Frameworks */,
+				2D28D9A020F9590F003A849F /* ReSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D28D98120F6B7A1003A849F /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				2D28D98220F6B7B9003A849F /* fatcat.jpg */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		2D28D99520F942AF003A849F /* LearnReduxTests */ = {
+			isa = PBXGroup;
+			children = (
+				2D28D99620F942AF003A849F /* LearnReduxTests.swift */,
+				2D28D99E20F942C1003A849F /* StoreTests.swift */,
+				2D28D99820F942AF003A849F /* Info.plist */,
+			);
+			path = LearnReduxTests;
+			sourceTree = "<group>";
+		};
 		2D7038E520EE7B2D003CE079 = {
 			isa = PBXGroup;
 			children = (
 				2D7038F020EE7B2D003CE079 /* LearnRedux */,
+				2D28D99520F942AF003A849F /* LearnReduxTests */,
 				2D7038EF20EE7B2D003CE079 /* Products */,
 				2D70390320EE7CDC003CE079 /* Frameworks */,
 			);
@@ -84,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				2D7038EE20EE7B2D003CE079 /* LearnRedux.app */,
+				2D28D99420F942AF003A849F /* LearnReduxTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,12 +140,13 @@
 		2D7038F020EE7B2D003CE079 /* LearnRedux */ = {
 			isa = PBXGroup;
 			children = (
+				2D28D98120F6B7A1003A849F /* New Group */,
 				2D7038F120EE7B2D003CE079 /* AppDelegate.swift */,
 				2D9A18EF20F3D83E003826F4 /* Store */,
 				2D7038F320EE7B2D003CE079 /* ViewController.swift */,
 				2D70391420F01875003CE079 /* BreatheViewController.swift */,
 				2D70391620F019B6003CE079 /* BreathView.swift */,
-				2D70390A20EFC3BC003CE079 /* Statez.swift */,
+				2D70390A20EFC3BC003CE079 /* States.swift */,
 				2D9A18ED20F3D104003826F4 /* BreathStore.swift */,
 				2D9A191E20F417EF003826F4 /* SettingsStore.swift */,
 				2D9A191C20F413BE003826F4 /* BreathViewModel.swift */,
@@ -123,10 +173,6 @@
 			isa = PBXGroup;
 			children = (
 				2D9A190720F3D87E003826F4 /* CustomLogDescriptionConvertible.swift */,
-				2D9A190B20F3D87E003826F4 /* CustomOperators.swift */,
-				2D9A190520F3D87E003826F4 /* GenericState.swift */,
-				2D9A190E20F3D87E003826F4 /* GenericViewState.swift */,
-				2D9A190620F3D87E003826F4 /* StatefulView.swift */,
 				2D9A190820F3D87E003826F4 /* StateSubscription.swift */,
 				2D9A190D20F3D87E003826F4 /* Store.swift */,
 				2D9A190C20F3D87E003826F4 /* ViewModel.swift */,
@@ -137,6 +183,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2D28D99320F942AF003A849F /* LearnReduxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D28D99D20F942AF003A849F /* Build configuration list for PBXNativeTarget "LearnReduxTests" */;
+			buildPhases = (
+				2D28D99020F942AF003A849F /* Sources */,
+				2D28D99120F942AF003A849F /* Frameworks */,
+				2D28D99220F942AF003A849F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D28D99A20F942AF003A849F /* PBXTargetDependency */,
+			);
+			name = LearnReduxTests;
+			productName = LearnReduxTests;
+			productReference = 2D28D99420F942AF003A849F /* LearnReduxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		2D7038ED20EE7B2D003CE079 /* LearnRedux */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D70390020EE7B2E003CE079 /* Build configuration list for PBXNativeTarget "LearnRedux" */;
@@ -144,7 +208,8 @@
 				2D7038EA20EE7B2D003CE079 /* Sources */,
 				2D7038EB20EE7B2D003CE079 /* Frameworks */,
 				2D7038EC20EE7B2D003CE079 /* Resources */,
-				2D70390920EE7D29003CE079 /* Copy Carthage Frameworks */,
+				2D28D9A120F9591C003A849F /* CopyFiles */,
+				2D28D9A220F9593D003A849F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -165,6 +230,10 @@
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Greg Kerzhner";
 				TargetAttributes = {
+					2D28D99320F942AF003A849F = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 2D7038ED20EE7B2D003CE079;
+					};
 					2D7038ED20EE7B2D003CE079 = {
 						CreatedOnToolsVersion = 9.3;
 					};
@@ -184,15 +253,24 @@
 			projectRoot = "";
 			targets = (
 				2D7038ED20EE7B2D003CE079 /* LearnRedux */,
+				2D28D99320F942AF003A849F /* LearnReduxTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2D28D99220F942AF003A849F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2D7038EC20EE7B2D003CE079 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D28D98320F6B7B9003A849F /* fatcat.jpg in Resources */,
 				2D7038FC20EE7B2E003CE079 /* LaunchScreen.storyboard in Resources */,
 				2D7038F920EE7B2E003CE079 /* Assets.xcassets in Resources */,
 				2D7038F720EE7B2D003CE079 /* Main.storyboard in Resources */,
@@ -202,7 +280,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2D70390920EE7D29003CE079 /* Copy Carthage Frameworks */ = {
+		2D28D9A220F9593D003A849F /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -210,7 +288,6 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/ReSwift.framework",
 			);
-			name = "Copy Carthage Frameworks";
 			outputPaths = (
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/ReSwift.framework",
 			);
@@ -221,32 +298,45 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2D28D99020F942AF003A849F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D28D99720F942AF003A849F /* LearnReduxTests.swift in Sources */,
+				2D28D99F20F942C1003A849F /* StoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2D7038EA20EE7B2D003CE079 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2D9A191320F3D87E003826F4 /* StateSubscription.swift in Sources */,
-				2D9A191920F3D87E003826F4 /* GenericViewState.swift in Sources */,
 				2D70391320EFE485003CE079 /* Actions.swift in Sources */,
 				2D7038F420EE7B2D003CE079 /* ViewController.swift in Sources */,
 				2D9A191820F3D87E003826F4 /* Store.swift in Sources */,
 				2D9A191D20F413BE003826F4 /* BreathViewModel.swift in Sources */,
-				2D9A191120F3D87E003826F4 /* StatefulView.swift in Sources */,
 				2D70391520F01875003CE079 /* BreatheViewController.swift in Sources */,
 				2D9A191F20F417EF003826F4 /* SettingsStore.swift in Sources */,
 				2D7038F220EE7B2D003CE079 /* AppDelegate.swift in Sources */,
-				2D9A191620F3D87E003826F4 /* CustomOperators.swift in Sources */,
-				2D9A191020F3D87E003826F4 /* GenericState.swift in Sources */,
 				2D9A18EE20F3D104003826F4 /* BreathStore.swift in Sources */,
 				2D70390D20EFC4FD003CE079 /* AppReducer.swift in Sources */,
 				2D9A191720F3D87E003826F4 /* ViewModel.swift in Sources */,
-				2D70390B20EFC3BC003CE079 /* Statez.swift in Sources */,
+				2D70390B20EFC3BC003CE079 /* States.swift in Sources */,
 				2D70391720F019B6003CE079 /* BreathView.swift in Sources */,
 				2D9A191220F3D87E003826F4 /* CustomLogDescriptionConvertible.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2D28D99A20F942AF003A849F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D7038ED20EE7B2D003CE079 /* LearnRedux */;
+			targetProxy = 2D28D99920F942AF003A849F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		2D7038F520EE7B2D003CE079 /* Main.storyboard */ = {
@@ -268,6 +358,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		2D28D99B20F942AF003A849F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KPQTNZNMW7;
+				INFOPLIST_FILE = LearnReduxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mlb.LearnReduxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LearnRedux.app/LearnRedux";
+			};
+			name = Debug;
+		};
+		2D28D99C20F942AF003A849F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KPQTNZNMW7;
+				INFOPLIST_FILE = LearnReduxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mlb.LearnReduxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LearnRedux.app/LearnRedux";
+			};
+			name = Release;
+		};
 		2D7038FE20EE7B2E003CE079 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -431,6 +561,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2D28D99D20F942AF003A849F /* Build configuration list for PBXNativeTarget "LearnReduxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D28D99B20F942AF003A849F /* Debug */,
+				2D28D99C20F942AF003A849F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D7038E920EE7B2D003CE079 /* Build configuration list for PBXProject "LearnRedux" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

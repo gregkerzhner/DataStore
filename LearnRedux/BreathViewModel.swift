@@ -9,7 +9,7 @@
 import Foundation
 
 struct BreathViewState: StoreState {
-  private let state: BreathState
+  let state: BreathState
 
   var inhaleDuration: CFTimeInterval {
     return CFTimeInterval(state.inhaleLength)
@@ -20,28 +20,50 @@ struct BreathViewState: StoreState {
   }
 
   var dispatchDelay: DispatchTimeInterval {
-    return DispatchTimeInterval.seconds(Int(state.pauseLength))
+    return DispatchTimeInterval.milliseconds(Int(state.pauseLength * 1000))
   }
 
-  init(state: BreathState = .empty) {
+  var finished: Bool {
+    return state.finished
+  }
+
+  var navigationBarHidden: Bool {
+    return started && !finished
+  }
+
+  let started: Bool
+
+  init(state: BreathState = .empty, started: Bool = false) {
     self.state = state
+    self.started = started
   }
 
   static let empty = BreathViewState()
 }
 
 enum BreathViewAction: StoreAction {
-  case restart
+  case start
   case storeUpdated(BreathState)
 }
 
 
 class BreathViewModel: ViewModel<BreathViewState, BreathViewAction> {
+  deinit {
+    print("Suckaa")
+  }
   private let breathStore: BreathStore
+  private var storeSubscription: StateSubscription<BreathState>?
   init(breathStore: BreathStore = BreathStore()) {
     self.breathStore = breathStore
+    print("A new guy")
     super.init(initialState: BreathViewState.empty,
                reducer: BreathViewReducer().reducer)
+
+    breathStore.subscribe(self)
+  }
+
+  func startAnimation() {
+    dispatch(action: .start)
   }
 
   func onBreathEnd() {
@@ -49,26 +71,17 @@ class BreathViewModel: ViewModel<BreathViewState, BreathViewAction> {
   }
 }
 
+extension BreathViewModel: StateSubscriber {
+  func newState(state: BreathState) {
+    self.dispatch(action: .storeUpdated(state))
+  }
+}
+
 struct BreathViewReducer {
   func reducer(action: BreathViewAction, state: BreathViewState) -> BreathViewState {
-    return BreathViewState.empty
-  }
-}
-
-/*
-class BreathViewModel: ViewModel<BreathViewState> {
-  private let store: BreathStore
-  init(store: BreathStore = BreathStore()) {
-    self.store = store
-    super.init(initialState: .empty)
-
-
-    store.subscribe { (state) in
-      let newState = BreathViewState(state: state)
-      self.update(state: newState)
+    switch action {
+    case .start: return BreathViewState(state: state.state, started: true)
+    case .storeUpdated(let settings): return BreathViewState(state: settings, started: state.started)
     }
-
-    //subscribe(to: <#T##Store<StoreState>#>, block: <#T##(StoreState) -> Void#>)
   }
 }
- */
